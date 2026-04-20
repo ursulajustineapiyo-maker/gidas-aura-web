@@ -1,0 +1,26 @@
+# Security Headers for Apache
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "DENY"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Referrer-Policy "no-referrer"
+    Header set Content-Security-Policy "default-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com https://wa.me https://www.google.com https://api.emailjs.com data:; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://wa.me; frame-src https://www.google.com; connect-src 'self' https://api.emailjs.com; base-uri 'self'; form-action 'self';"
+    Header set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+</IfModule>
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect .htaccess and other hidden files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Redirect HTTP to HTTPS (if supported by server)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

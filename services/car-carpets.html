@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Carpets Cleaning | Gidas Aura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .service-page-hero {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1b263b 0%, #0d1b2a 100%);
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 110px;
+            left: 20px;
+            color: var(--brand-orange);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .service-hero-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .service-content-section {
+            padding: 80px 0;
+            background: #0d1b2a;
+        }
+
+        .service-text-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-main-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .service-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .meta-item h4 {
+            color: var(--brand-orange);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .meta-item p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .service-cta-box {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .service-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .service-page-hero {
+                padding-top: 120px;
+            }
+
+            .back-link {
+                top: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tsparticles"></div>
+    <!-- Navbar -->
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.jpeg" alt="Gidas Aura Logo" class="logo-icon">
+                <span class="brand-name">GIDAS <span class="accent">AURA</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#services" class="active">Services</a></li>
+                <li><a href="../index.html#about-us">About Us</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li class="mobile-cta"><a href="../index.html#contact" class="btn btn-primary">Book a Cleaning</a></li>
+            </ul>
+            <a href="../index.html#contact" class="btn btn-primary cta-pulse">Book a Cleaning</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main style="position: relative; z-index: 1;">
+        <section class="service-page-hero">
+            <div class="container">
+                <a href="../index.html#services" class="back-link">
+                    <i data-lucide="arrow-left"></i> Back to Services
+                </a>
+                <div class="service-hero-icon">🚙</div>
+                <h1 class="glitter-text">Car Carpets</h1>
+            </div>
+        </section>
+
+        <section class="service-content-section">
+            <div class="container">
+                <div class="service-text-wrapper">
+                    <div class="service-main-text">
+                        <p>Car carpets are the most walked-on surfaces in your vehicle and also the most neglected.
+                            Every time you enter your car, you bring in mud, dust, sand, water, food particles, and
+                            everything your shoes have collected throughout the day. Over time, this builds up into a
+                            deeply embedded layer of grime that regular vacuuming cannot fully remove.</p>
+                        <br>
+                        <p>At Gidas Aura, our professional car carpet cleaning service uses powerful equipment and
+                            certified cleaning products to restore your car floor to a genuinely clean condition.</p>
+                        <br>
+                        <p>Our process begins by removing all floor mats from the vehicle. Each mat is taken outside,
+                            beaten to loosen deeply embedded dirt, and then thoroughly scrubbed using a professional
+                            brush and cleaning solution. They are rinsed and left to dry separately.</p>
+                        <br>
+                        <p>The car carpet itself is then vacuumed thoroughly using a high-powered vacuum to remove all
+                            loose dirt and debris. We apply a professional deep-clean carpet solution that penetrates
+                            the carpet fibres and breaks down embedded grime, stains, and odour-causing bacteria.</p>
+                        <br>
+                        <p>Our specialist agitates the solution using firm brushes to ensure it reaches deep into the
+                            carpet pile. Our extraction machine then removes all the dissolved dirt, solution, and
+                            moisture leaving the carpet genuinely clean rather than just surface-treated. The carpet is
+                            then deodorised and the vehicle is left with doors open to allow proper air drying.</p>
+                        <br>
+                        <p>The result is a car floor that looks remarkably clean, smells completely fresh, and feels
+                            noticeably better underfoot transforming the overall feel of your vehicle interior.</p>
+                    </div>
+
+                    <div class="service-meta">
+                        <div class="meta-item">
+                            <h4>Time Taken</h4>
+                            <p>1 to 1.5 hours</p>
+                        </div>
+                        <div class="meta-item">
+                            <h4>Result</h4>
+                            <p>Clean, dry, fresh-smelling car carpets</p>
+                        </div>
+                    </div>
+
+                    <div class="service-cta-box">
+                        <a href="../index.html#contact" class="btn btn-primary"
+                            style="padding: 18px 40px; font-size: 1.1rem;">Book this Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../logo.jpeg" alt="Gidas Aura Logo" class="footer-logo">
+                    <p class="footer-tagline">Bringing Cleanliness to Life</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html#home">Home</a></li>
+                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="../index.html#about-us">About Us</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="https://wa.me/254725537150"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gidas Aura Professional Cleaning Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254725537150?text=Hello%20Gina!%20I%20am%20interested%20in%20your%20professional%20car%20carpet%20cleaning%20services."
+        class="whatsapp-pill bounce" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

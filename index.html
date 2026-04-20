@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gidas Aura | Professional Cleaning Services</title>
+    <meta name="description"
+        content="Professional Cleaning Services in Nairobi. Reliable, affordable, and professional cleaning for homes, offices, and more. Bringing cleanliness to life.">
+    <!-- Google Fonts -->
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://wa.me; frame-src https://www.google.com; connect-src 'self' https://api.emailjs.com; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.447.0/dist/umd/lucide.min.js"
+        integrity="sha384-Dz4ik2rSIBcZNYVxAlmQZ8rWcMR7xvP51Uek2nC8vKu0wOrSn0e085ubLPVjuowq"
+        crossorigin="anonymous"></script>
+    <!-- FontAwesome for brand icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <!-- tsParticles Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.bundle.min.js"
+        integrity="sha384-LmPKWpIRd9XoJmRCR0mmO4v747nwqb3G/aly0UfTPsGW/F9tSMyctOXEQYvOpSdO"
+        crossorigin="anonymous"></script>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230D1B2A'/><rect x='20' y='65' width='14' height='20' rx='4' fill='%23F5A623'/><rect x='25' y='30' width='4' height='35' rx='2' fill='%231E90FF'/><ellipse cx='72' cy='40' rx='12' ry='14' fill='%231B263B' stroke='%231E90FF' stroke-width='2'/><ellipse cx='72' cy='35' rx='8' ry='5' fill='%23F5A623'/></svg>"
+        type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Gidas Aura Logo" class="logo-icon">
+                <span class="brand-name">GIDAS <span class="accent">AURA</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="mobile-cta"><a href="#contact" class="btn btn-primary">Book a Cleaning</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary cta-pulse">Book a Cleaning</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
+    <div id="tsparticles"></div>
+
+    <div id="main-view">
+        <!-- Hero Section -->
+        <header id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <span class="tagline-blue">PROFESSIONAL CLEANING SERVICES</span>
+                    <h1 class="glitter-text">Bringing Cleanliness to Life</h1>
+                    <p class="subheadline">Reliable. Affordable. Professional.</p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                        <a href="#services" class="btn btn-outline">Our Services</a>
+                    </div>
+                    <p class="tagline-gold">Bringing Cleanliness to Life</p>
+                </div>
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                    <p>Scroll Down</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="services-grid">
+                    <a href="service-detail.html?service=home" class="service-card reveal">
+                        <div class="service-icon">🏠</div>
+                        <h3>Home Cleaning</h3>
+                        <p>Expert residential cleaning for a fresh and hygienic living space.</p>
+                    </a>
+                    <a href="service-detail.html?service=office" class="service-card reveal">
+                        <div class="service-icon">🏢</div>
+                        <h3>Office Cleaning</h3>
+                        <p>Maintain a professional work environment with our recurring office services.</p>
+                    </a>
+                    <a href="service-detail.html?service=deep" class="service-card reveal">
+                        <div class="service-icon">🧹</div>
+                        <h3>Deep Cleaning</h3>
+                        <p>Thorough, intensive cleaning targeting every corner of your property.</p>
+                    </a>
+                    <a href="service-detail.html?service=move" class="service-card reveal">
+                        <div class="service-icon">📦</div>
+                        <h3>Move-in / Move-out</h3>
+                        <p>Specialized cleaning to prepare spaces for new occupants or departures.</p>
+                    </a>
+                    <a href="service-detail.html?service=construction" class="service-card reveal">
+                        <div class="service-icon">🏗️</div>
+                        <h3>Post Construction</h3>
+                        <p>Removing dust, debris, and residue after renovation or new builds.</p>
+                    </a>
+                </div>
+
+                <!-- Upholstery Cleaning Section -->
+                <h2 class="upholstery-title">Upholstery Cleaning Services</h2>
+                <div class="services-grid">
+                    <a href="services/sofas-couches.html" class="service-card reveal upholstery-card">
+                        <div class="service-icon">🛋️</div>
+                        <h3>Sofas & Couches</h3>
+                        <p>Deep cleaning for all types of sofas and couches-removing stains, odours, and allergens for a
+                            fresh, hygienic living space.</p>
+                    </a>
+                    <a href="services/dining-office-chairs.html" class="service-card reveal upholstery-card">
+                        <div class="service-icon">🪑</div>
+                        <h3>Dining & Office Chairs</h3>
+                        <p>Professional cleaning of fabric and leather dining and office chairs restored to look and
+                            feel brand new.</p>
+                    </a>
+                    <a href="services/mattresses.html" class="service-card reveal upholstery-card">
+                        <div class="service-icon">🛏️</div>
+                        <h3>Mattresses</h3>
+                        <p>Thorough mattress cleaning to eliminate dust mites, sweat stains, and bacteria for a
+                            healthier and better sleep.</p>
+                    </a>
+                    <a href="services/car-seats.html" class="service-card reveal upholstery-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Car Seats</h3>
+                        <p>Interior seat cleaning that removes dirt, food stains, and odours leaving your car interior
+                            spotless and fresh.</p>
+                    </a>
+                    <a href="services/car-carpets.html" class="service-card reveal upholstery-card">
+                        <div class="service-icon">🚙</div>
+                        <h3>Car Carpets</h3>
+                        <p>Deep cleaning of car floor carpets removing embedded dirt, stains, and bad odours completely.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+                <div class="why-us-grid">
+                    <div class="why-item reveal">
+                        <div class="why-icon">✅</div>
+                        <h3>Reliable</h3>
+                        <p>We show up on time, every time. Consistency you can trust.</p>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-icon">💰</div>
+                        <h3>Affordable</h3>
+                        <p>Competitive pricing with no hidden costs for premium quality.</p>
+                    </div>
+                    <div class="why-item reveal">
+                        <div class="why-icon">🌟</div>
+                        <h3>Professional</h3>
+                        <p>Trained, vetted, and trusted cleaners for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-container">
+                    <div class="step reveal">
+                        <div class="step-num">1</div>
+                        <h3>Book online or call us</h3>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step reveal">
+                        <div class="step-num">2</div>
+                        <h3>We arrive fully equipped</h3>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step reveal">
+                        <div class="step-num">3</div>
+                        <h3>Enjoy your spotless space</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase Section -->
+        <section id="specialized-services" class="specialized-service">
+            <div class="container">
+                <h2 class="section-title">Specialized Services</h2>
+                <div class="video-showcase-container">
+                    <div class="video-content reveal">
+                        <h3 class="video-title">Professional Baker's Couche Sanitization</h3>
+                        <p>Maintaining impeccable hygiene is essential for the success of every professional bakery. At
+                            Gida, our specialized cleaning process meticulously removes built-up flour, dough residue,
+                            and oils from baker's couches while completely preserving the integrity of the linen.</p>
+                        <p>We strictly adhere to rigorous food-safe protocols, ensuring your delicate proofing cloths
+                            are returned thoroughly sanitized and perfectly prepped for your next artisan bake.</p>
+                    </div>
+                    <div class="video-wrapper reveal">
+                        <video controls autoplay loop muted playsinline class="showcase-video">
+                            <source src="cauchescleaning.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-caption">Uncompromising hygiene standards for flawless baking. Watch our
+                            food-safe couche cleaning process in action.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Couch & Upholstery Cleaning Showcase -->
+        <section id="upholstery-cleaning" class="upholstery-showcase">
+            <div class="container">
+                <h2 class="section-title">Deep Couch & Upholstery Cleaning</h2>
+                <div class="upholstery-container reveal">
+                    <div class="upholstery-hero">
+                        <img src="image.png" alt="Freshly cleaned couch" class="couch-hero-img">
+                        <div class="hero-overlay">
+                            <h3>Revive Your Furniture</h3>
+                            <p>Experience the ultimate deep clean that eliminates years of trapped dirt, allergens, and
+                                stains from your favorite couch.</p>
+                        </div>
+                    </div>
+
+                    <div class="upholstery-videos">
+                        <div class="video-card">
+                            <video controls autoplay loop muted playsinline class="upholstery-video">
+                                <source src="cleaningcauches machine.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">See what we remove from your furniture</p>
+                        </div>
+                        <div class="video-card">
+                            <video controls autoplay loop muted playsinline class="upholstery-video">
+                                <source src="cleaningtiles.mp4" type="video/mp4">
+                            </video>
+                            <p class="video-caption">We use only certified, safe cleaning products</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="testimonial-carousel" id="testimonial-carousel">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">"Absolutely the best service in Nairobi. They were punctual and my home has
+                            never
+                            looked better!"</p>
+                        <span class="client-name">- Sarah M., Kilimani</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">"Professional and thorough. The deep cleaning service surpassed my
+                            expectations.
+                            Highly recommend!"</p>
+                        <span class="client-name">Purity M.., Westlands</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">"Affordable and reliable. Gidas Aura is now my go-to for office maintenance."
+                        </p>
+                        <span class="client-name">- Grace W., Westlands</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p class="quote">"Post-construction? I was worried it would never look clean. Gidas Aura made it
+                            spotless in one session. Absolute legends!"</p>
+                        <span class="client-name">- James K., Karen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Form -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="contact-title">Let Us Make Your Space Sparkle!</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <span>+254 725 537 150</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <span>0783 567 917</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <span>ginadongo@gmail.com</span>
+                        </div>
+                        <div class="map-placeholder">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127640.33443311103!2d36.75842886367807!3d-1.30280016918844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d43e7%3A0xb3cf5bbdf2e132c3!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1714032000000!5m2!1sen!2ske"
+                                width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-container reveal" id="form-wrapper">
+                        <form id="booking-form">
+                            <input type="text" name="user_name" placeholder="Your Name" required>
+                            <input type="email" name="user_email" placeholder="Email Address" required>
+                            <input type="tel" name="user_phone" placeholder="Phone Number" required>
+                            <select name="service_type" required>
+                                <option value="" disabled selected>Select Service Type</option>
+                                <option value="Home Cleaning">Home Cleaning</option>
+                                <option value="Office Cleaning">Office Cleaning</option>
+                                <option value="Deep Cleaning">Deep Cleaning</option>
+                                <option value="Move-in / Move-out">Move-in / Move-out</option>
+                                <option value="Post Construction">Post Construction</option>
+                            </select>
+                            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+                            <button type="submit" class="btn btn-primary" id="submit-btn">
+                                <span id="btn-text">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Success Message -->
+                    <div id="success-message" class="success-card hidden">
+                        <div class="success-icon">✨</div>
+                        <h3><strong>Thank you!</strong> Your booking request has been sent.</h3>
+                        <p>A Gidas Aura representative will contact you shortly to confirm your sparkle appointment.</p>
+                        <a href="#home" class="btn btn-primary" id="return-home-btn">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+    </div> <!-- /main-view -->
+
+    <!-- About Us Section (Dedicated View) -->
+    <div id="about-us-view" class="about-us-view hidden">
+        <!-- Hero Section with Background Video -->
+        <section class="about-hero">
+            <div class="video-background-container">
+                <video id="about-bg-video" autoplay loop muted playsinline class="about-bg-video">
+                    <source src="transformedcleanedchair.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+
+            <div class="container about-hero-content reveal active">
+                <h1 class="about-headline">We don't just clean...we transform</h1>
+
+                <div class="trust-icons-row">
+                    <div class="trust-icon-item">
+                        <i data-lucide="shield-check"></i>
+                        <span>Trained Professionals</span>
+                    </div>
+                    <div class="trust-icon-item">
+                        <i data-lucide="leaf"></i>
+                        <span>Certified Safe Products</span>
+                    </div>
+                    <div class="trust-icon-item">
+                        <i data-lucide="award"></i>
+                        <span>Guaranteed Results</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Section: Story & Videos -->
+        <section class="about-story-section">
+            <div class="container">
+                <div class="story-grid">
+                    <!-- Left: Text -->
+                    <div class="story-text-content reveal active">
+                        <h2 class="section-title text-left">Our Story</h2>
+                        <div class="about-text-paragraphs">
+                            <p>At <strong>Gidas Aura Cleaning Services</strong>, we are committed to delivering
+                                exceptional cleaning solutions that create fresh, healthy, and welcoming spaces. Based
+                                in Nairobi, we proudly serve both residential and commercial clients with
+                                professionalism, reliability, and attention to detail.</p>
+                            <p>Our services include general cleaning, deep cleaning, post-construction cleaning, office
+                                cleaning, and customized cleaning solutions tailored to meet each client's unique needs.
+                                We use safe, effective cleaning products and modern techniques to ensure high-quality
+                                results every time.</p>
+                            <p>At the heart of our business is a passion for excellence and customer satisfaction. We
+                                believe that a clean space enhances comfort, productivity, and peace of mind and that's
+                                exactly what we aim to provide.</p>
+                            <p>With a dedicated and trustworthy team, Gidas Aura Cleaning Services guarantees
+                                consistency, efficiency, and a sparkling finish you can count on.</p>
+                            <p class="about-signature"><strong>Gidas Aura Cleaning Services Cleaning with Care,
+                                    Excellence in Every Touch.</strong></p>
+                        </div>
+
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <h3>500+</h3>
+                                <p>Clean Spaces</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Satisfaction</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>24/7</h3>
+                                <p>Support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Videos (Replaced with a centralized three-video grid below) -->
+                </div>
+
+                <!-- Video Showcase Grid -->
+                <div class="about-video-grid-container reveal active">
+                    <div class="video-item">
+                        <h4 class="video-label">Professional Deep Extraction</h4>
+                        <div class="video-player-wrapper">
+                            <video controls muted playsinline class="about-grid-video">
+                                <source src="vaccum.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="video-caption">Our powerful vacuum equipment pulls out deep-seated dirt, dust, and
+                            allergens that regular cleaning misses leaving your furniture truly clean inside and out.
+                        </p>
+                    </div>
+
+                    <div class="video-item">
+                        <h4 class="video-label">Expert Hand Scrubbing</h4>
+                        <div class="video-player-wrapper">
+                            <video controls muted playsinline class="about-grid-video">
+                                <source src="ginascrubbingchair.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="video-caption">Our trained specialists scrub every surface by hand using certified,
+                            safe detergents ensuring no stain, no odour, and no residue is left behind.</p>
+                    </div>
+
+                    <div class="video-item">
+                        <h4 class="video-label">A Transformed Couch</h4>
+                        <div class="video-player-wrapper">
+                            <video controls muted playsinline class="about-grid-video">
+                                <source src="lavender.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="video-caption">See the stunning difference after a Gidas Aura deep clean. This
+                            client's couch was fully restored fresh, clean, and glowing. This is what we deliver
+                            everytime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CTA Band -->
+        <section class="about-cta-band">
+            <div class="container cta-band-content reveal active">
+                <h2>Book a cleaning today</h2>
+                <a href="#contact" class="btn btn-primary" id="about-cta-btn">Get Started</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpeg" alt="Gidas Aura Logo" class="footer-logo">
+                    <p class="footer-tagline">Bringing Cleanliness to Life</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="https://wa.me/254725537150" target="_blank" rel="noopener noreferrer"><i
+                                data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gidas Aura Professional Cleaning Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/254725537150?text=Hello%20Gina!%20I%20am%20interested%20in%20your%20professional%20cleaning%20services.%20Could%20you%20please%20provide%20more%20details?"
+        class="whatsapp-pill bounce" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- SUCCESS Message -->
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        integrity="sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS"
+        crossorigin="anonymous"></script>
+    <!-- canvas-confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"
+        integrity="sha384-Rv68Y7adOjMMJc1/xFMcdNvXre/HF51to4GZjBALmXr7ABnVl5V4UajJwBu7zbhN"
+        crossorigin="anonymous"></script>
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"
+        integrity="sha384-gZSNMuUgSbqcltOBBRNXCH+szg+2C69ISFyCk2w+xsZc0iFU+bIVPfYPmLwLtNzz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
